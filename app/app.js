@@ -152,7 +152,7 @@ function initialize()
                 let objectURL = URL.createObjectURL(ajax.response);
                 showProduct(objectURL,product);
             }else {
-                alert("Fetching data is failed,Try again later");
+                alert("Fetching data is failed,Try again later,in fetch photo");
             }
         }
         ajax.send();
