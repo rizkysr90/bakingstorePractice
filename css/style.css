@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+:root {
+    --primary : #845EC2;
+    --secondary : #FFC75F;
+    --textColor : #F9F871;
+    --tersier : #FF5E78;
+    --heading1 : 'Nunito', sans-serif;
+    --boxshadow : 0px -1px 13px 1px rgba(0,0,0,0.75);
+
+}
+/* Coloring */
+.navbar-container {
+    background-color: #845EC2;
+}
+.fa-bars {
+    color: white;
+}
+.option {
+    color: white;
+    background-color: var(--tersier);
+}
+.searchToggle {
+    background-color: var(--tersier);
+}
+.searchToggle .fa-search {
+    color: white;
+}
+.category-list ul {
+    background-color: var(--tersier);
+}
+.category-list a {
+    color: white;
+}
+/* Base */
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* -------------------------- Building Blocks ------------------------------*/
+.company-name {
+    margin: 0;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+.links {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+}
+.main-navbar {
+    width: 95%;
+    margin: 0 auto;
+    padding: 4% 2%;
+}
+.links a {
+    margin: 10px 0;
+}
+.img-slider {
+    height: 45vh;
+    margin: 1rem 0;
+}
+.links a{
+    padding: 0.8rem 1.5rem;
+}
+.option {
+    font-size: 1rem;
+    padding: 0.6em 1em;
+}
+.search-container {
+    margin: 10px 0;
+}
+
+.searchBox input {
+    padding: 0.8rem;
+}
+.searchToggle {
+    padding: 0.8rem 1.5rem;
+}
+
+.category-list ul {
+    width: 100%;
+    margin: 0.6em 0;
+}
+.category-list a {
+    padding: 0.8em  1em;
+}
+.dropdown {
+    height: 0;
+    overflow: hidden;
+}
+/* -------------------------- End Of Building Blocks ------------------------------*/
+
+/* -------------------------- Layouting ------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    display: block;
+}
+.img-slider {
+    display: flex;
+}
+.img-slider img {
+    flex: 1;
+    object-fit: cover;
+}
+/* .option {
+    display: inline-block;
+} */
+.searchBox {
+    display: flex;
+}
+.searchBox input {
+    flex: 1;
+}
+.searchToggle {
+    display: flex;
+    align-items: center;
+}
+
+.category-list a {
+    display: block;
+}
+
+/* Product showcase related */
+.product-showcase {
+    display: flex;
+    flex-flow: row wrap;
+}
+.product-card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    /* padding: 4%; */
+    flex-grow: 1;
+    flex-basis: 40%;
+    margin: 10px;
+    
+}
+.product-img,.product-describe {
+    padding: 4%;
+}
+.product-describe {
+    text-align: center;
+}
+.product-describe .name-product,.product-describe .price-product {
+    margin: 5px 0;
+}
+.name-product {
+    font-size: 0.75rem;
+    margin-bottom: 50px;
+}
+.product-describe {
+    background-color: var(--secondary);
+    margin-top: auto;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+
+/* -------------------------- End Of Layouting ------------------------------*/
+
+/* -------------------------- Text Styling ------------------------------*/
+.company-name {
+    color: var(--textColor);
+    font-family: var(--heading1);
+}
+.links,.category-list ul {
+    text-align: center;
+}
+.links a {
+    font-size: 1.2rem;
+}
+.option label {
+    font-family: var(--heading1);
+}
+.searchBox input {
+    font-size: 1rem;
+}
+.category-list a {
+    font-size: 1rem;
+}
+
+/* -------------------------- End Of Text Styling  ------------------------------*/
+
+/* -------------------------- Small Changes ------------------------------*/
+.navbar-toggle {
+    cursor: pointer;
+}
+.img-slider img {
+    border-radius: 5%;
+}
+.option {
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+.searchBox input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid var(--primary);
+    border-right: 0;
+  
+}
+.searchToggle {
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+.category-list ul {
+    border-radius: 5%;
+}
+.category-list li {
+    border-bottom: 1px solid white;
+}
+.category-list li:last-child{
+    border: 0;
+}
+/* -------------------------- End Of Small Changes ------------------------------*/
+
+/* To Response Javascript*/
+.rotate-navbar {
+    transform: rotate(90deg);
+}
+.show-links {
+    height: 10.2rem;
+}
+.show-dropdown {
+    height: 11.2rem;
+    /* display: inline-block; */
+}
+.rotate-dropdown-icon {
+    transform: rotate(-180deg);
+}
+
+
+/* Animations */
+.links {
+    transition: all 0.5s ease-in;
+}
+.navbar-toggle {
+    transition: all 0.2s ease-in;
+}
+.links a:hover {
+    color: var(--textColor);
+}
+
+.searchBox input:focus {
+    background-color: #F9F871;
+}
+.category-list a:hover {
+    background-color: var(--secondary);
+}
+.option i {
+    transition: all 0.5s ease ;
+}
+.dropdown {
+    transition: all 0.5s ease-in;
+}
+/* End Of Animations */

@@ -1,0 +1,56 @@
+[
+    {
+        "name" : "Blueband 200gr",
+        "harga": 8.000,
+        "image": "blueband.jpg",
+        "type" : "butter"
+    },
+    {
+        "name" : "Forvita 200gr",
+        "harga": 5.000,
+        "image": "forvita.jpg",
+        "type" : "butter"
+    },
+    {
+        "name" : "Palmia 200gr",
+        "harga": 6.000,
+        "image": "palmia.jpg",
+        "type" : "butter"
+    },
+    {
+        "name" : "Prochiz Premium 180gr",
+        "harga": 17.000,
+        "image": "prochizpremium.jpg",
+        "type" : "keju"
+    },
+    {
+        "name" : "Prochiz Gold 180gr",
+        "harga": 13.000,
+        "image": "prochizgold.jpg",
+        "type" : "keju"
+    },
+    {
+        "name" : "MEG Cheddar 180gr",
+        "harga": 13.000,
+        "image": "megkeju.jpg",
+        "type" : "keju"
+    },
+    {
+        "name" : "Segitiga Biru",
+        "harga": 10.000,
+        "image": "segitigabiru.jpg",
+        "type" : "tepung"
+    },
+    {
+        "name" : "Cakra Kembar",
+        "harga": 11.000,
+        "image": "cakrakembar.jpg",
+        "type" : "tepung"
+    },
+    {
+        "name" : "Lencana Merah",
+        "harga": 11.000,
+        "image": "lencanamerah.jpg",
+        "type" : "tepung"
+    }
+]
