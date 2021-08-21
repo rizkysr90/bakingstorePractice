@@ -22,8 +22,8 @@ categoryDropdown.addEventListener("click",function()
 // Showcase Products
 let product;
 const xhr = new XMLHttpRequest();
-xhr.open("GET","../product.json"); 
-// xhr.open("GET","https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/product.json");
+// xhr.open("GET","../product.json"); 
+xhr.open("GET","https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/product.json");
 xhr.responseType = "json";
 xhr.onload = function()
 {
