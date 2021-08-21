@@ -22,8 +22,8 @@ categoryDropdown.addEventListener("click",function()
 // Showcase Products
 let product;
 const xhr = new XMLHttpRequest();
-// xhr.open("GET","../product.json"); 
-xhr.open("GET","https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/product.json");
+xhr.open("GET","../product.json"); 
+// xhr.open("GET","https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/product.json");
 xhr.responseType = "json";
 xhr.onload = function()
 {
@@ -32,7 +32,7 @@ xhr.onload = function()
     product = xhr.response;
     initialize();
   }else {
-    alert("Fetching data is failed,Try again later");
+    alert("Fetching data is failed,Try again later in json");
   }
 }
 xhr.send();
@@ -137,8 +137,8 @@ function initialize()
     }
     function fetchBlob(product)
     {
-        // let url = "../img/" + product.image;
-        let url = "https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/img/"+ product.image;
+        let url = "../img/" + product.image;
+        // let url = "https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/img/"+ product.image;
      
 
         let ajax = new XMLHttpRequest();
@@ -152,7 +152,7 @@ function initialize()
                 let objectURL = URL.createObjectURL(ajax.response);
                 showProduct(objectURL,product);
             }else {
-                alert("Fetching data is failed,Try again later,in fetch photo");
+                alert("Fetching data is failed,Try again later,in fetch im");
             }
         }
         ajax.send();
