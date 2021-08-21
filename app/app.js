@@ -137,7 +137,8 @@ function initialize()
     }
     function fetchBlob(product)
     {
-        let url = "../img/" + product.image;
+        // let url = "../img/" + product.image;
+        let url = "https://raw.githubusercontent.com/rizkysr90/bakingstorePractice/gh-pages/img/"+ product.image;
      
 
         let ajax = new XMLHttpRequest();
